@@ -150,7 +150,6 @@ export async function main(ns) {
         expRate: s.expRate
     }))), "w");
     // Below is stats for hacknet servers - uncomment at cost of 4 GB Ram
-    /*
     var hacknet_nodes = [...(function* () {
         var n = ns.hacknet.numNodes();
         for (var i = 0; i < n; i++) {
@@ -163,5 +162,4 @@ export async function main(ns) {
         return b.gainRate - a.gainRate;
     })[0];
     if (best_hacknet_node) ns.tprint("Best hacknet node: ", best_hacknet_node.name, " with $", best_hacknet_node.gainRate, " per ram-second");
-    */
 }
